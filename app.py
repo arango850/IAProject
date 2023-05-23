@@ -54,8 +54,8 @@ def load_modelD():
     return loaded_model
 
 def load_modelP():
-    loaded_model= joblib.load("dtPoints.joblib")
-    return loaded_model
+    loaded_model1= joblib.load("dtPoints.joblib")
+    return loaded_model1
 
 
 st.title("Inputs para modelo de piloto")
@@ -90,7 +90,6 @@ if clicked:
 
 st.title("Inputs para modelo de puntos")
 
-
 racerIdX= st.number_input("racerIdX")
 driverIdX= st.number_input("driverIdX")
 constructorIdX= st.number_input("constructorIdX")
@@ -110,10 +109,10 @@ clicked1= st.button("PredecirX")
 model1= load_modelP()
 if clicked1:
     print("Resolviendo")
-    resultado= model1.predict(pd.DataFrame({"racerId":[racerIdX],"driverId":[driverIdX],
+    resultado1= model1.predict(pd.DataFrame({"driverId":[driverIdX],"racerId":[racerIdX],
                        "constructorId":[constructorIdX],"grid":[gridX],"finish":[finishX],
                        "laps":[lapsX],"timetaken_in_millisec":[timetaken_in_millisecX],
                        "fastestLap":[fastestLapX],"max_speed":[max_speedX],"statusId":[statusIdX],
                        "year":[yearX],"wins":[winsX],"age":[ageX],"nationalityN":[nationalityNX]}))
-    st.text("El resultado del modelo es: {}".format(resultado))
+    st.text("El resultado del modelo es: {}".format(resultado1))
 
