@@ -4,6 +4,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import joblib
+import sklearn 
 from PIL import Image
 
 st.title('F1')
