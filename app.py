@@ -72,7 +72,6 @@ fastestLap= st.number_input("fastestLap")
 max_speed= st.number_input("max_speed")
 statusId= st.number_input("statusId")
 year= st.number_input("year")
-wins= st.number_input("wins")
 age= st.number_input("age")
 nationalityN= st.number_input("nationalityN")
 
@@ -85,7 +84,7 @@ if clicked:
                        "constructorId":[constructorId],"grid":[grid],"finish":[finish],
                        "points":[points],"laps":[laps],"timetaken_in_millisec":[timetaken_in_millisec],
                        "fastestLap":[fastestLap],"max_speed":[max_speed],"statusId":[statusId],
-                       "year":[year],"wins":[wins],"age":[age],"nationalityN":[nationalityN]}))
+                       "year":[year],"age":[age],"nationalityN":[nationalityN]}))
     st.text("El resultado del modelo es: {}".format(resultado))
 
 st.title("Inputs para modelo de puntos")
@@ -101,7 +100,6 @@ fastestLapX= st.number_input("fastestLapX")
 max_speedX= st.number_input("max_speedX")
 statusIdX= st.number_input("statusIdX")
 yearX= st.number_input("yearX")
-winsX= st.number_input("winsX")
 ageX= st.number_input("ageX")
 nationalityNX= st.number_input("nationalityNX")
 
@@ -113,6 +111,6 @@ if clicked1:
                        "constructorId":[constructorIdX],"grid":[gridX],"finish":[finishX],
                        "laps":[lapsX],"timetaken_in_millisec":[timetaken_in_millisecX],
                        "fastestLap":[fastestLapX],"max_speed":[max_speedX],"statusId":[statusIdX],
-                       "year":[yearX],"wins":[winsX],"age":[ageX],"nationalityN":[nationalityNX]}))
+                       "year":[yearX],"age":[ageX],"nationalityN":[nationalityNX]}))
     st.text("El resultado del modelo es: {}".format(resultado1))
 
