@@ -34,8 +34,8 @@
 <h1>Entrega Final IA<a class="headerlink" href="#entrega-final-ia" title="Permalink to this heading">¶</a></h1>
 <section id="andres-arango">
 <h2>Andrés Arango<a class="headerlink" href="#andres-arango" title="Permalink to this heading">¶</a></h2>
-<section id="presentacion">
-<h3>Presentación<a class="headerlink" href="#presentacion" title="Permalink to this heading">¶</a></h3>
+<section id="presentacion-basica-del-proyecto">
+<h3>Presentación Básica del proyecto<a class="headerlink" href="#presentacion-basica-del-proyecto" title="Permalink to this heading">¶</a></h3>
 <section id="la-formula-1-es-la-categoria-mas-prestigiosa-y-de-mayor-nivel-en-el-automovilismo-de-carreras-se-trata-de-un-campeonato-mundial-de-carreras-de-monoplazas-donde-compiten-equipos-y-pilotos-de-elite-a-bordo-de-vehiculos-de-altas-prestaciones-y-tecnologia-avanzada">
 <h4>La Fórmula 1 es la categoría más prestigiosa y de mayor nivel en el automovilismo de carreras. Se trata de un campeonato mundial de carreras de monoplazas, donde compiten equipos y pilotos de élite a bordo de vehículos de altas prestaciones y tecnología avanzada.<a class="headerlink" href="#la-formula-1-es-la-categoria-mas-prestigiosa-y-de-mayor-nivel-en-el-automovilismo-de-carreras-se-trata-de-un-campeonato-mundial-de-carreras-de-monoplazas-donde-compiten-equipos-y-pilotos-de-elite-a-bordo-de-vehiculos-de-altas-prestaciones-y-tecnologia-avanzada" title="Permalink to this heading">¶</a></h4>
 </section>
@@ -51,6 +51,9 @@
 <section id="la-formula-1-es-conocida-por-su-intensidad-y-competitividad-con-adelantamientos-emocionantes-estrategias-de-carrera-elaboradas-y-una-constante-busqueda-de-la-innovacion-tecnologica-es-seguida-por-millones-de-aficionados-en-todo-el-mundo-y-cuenta-con-una-larga-historia-llena-de-leyendas-y-rivalidades-entre-pilotos-y-equipos">
 <h4>La Fórmula 1 es conocida por su intensidad y competitividad, con adelantamientos emocionantes, estrategias de carrera elaboradas y una constante búsqueda de la innovación tecnológica. Es seguida por millones de aficionados en todo el mundo y cuenta con una larga historia llena de leyendas y rivalidades entre pilotos y equipos.<a class="headerlink" href="#la-formula-1-es-conocida-por-su-intensidad-y-competitividad-con-adelantamientos-emocionantes-estrategias-de-carrera-elaboradas-y-una-constante-busqueda-de-la-innovacion-tecnologica-es-seguida-por-millones-de-aficionados-en-todo-el-mundo-y-cuenta-con-una-larga-historia-llena-de-leyendas-y-rivalidades-entre-pilotos-y-equipos" title="Permalink to this heading">¶</a></h4>
 </section>
+<section id="a-lo-largo-de-los-anos-surgen-debates-acerca-de-que-piloto-fue-el-que-finalizo-en-que-posicion-o-que-pilo-segun-su-equipo-o-nacionalidad-podria-obtener-cierta-cantidad-de-puntos-en-determinada-carrera">
+<h4>A lo largo de los años surgen debates acerca de que piloto fue el que finalizó en que posición o que pilo según su equipo o nacionalidad podría obtener cierta cantidad de puntos en determinada carrera.<a class="headerlink" href="#a-lo-largo-de-los-anos-surgen-debates-acerca-de-que-piloto-fue-el-que-finalizo-en-que-posicion-o-que-pilo-segun-su-equipo-o-nacionalidad-podria-obtener-cierta-cantidad-de-puntos-en-determinada-carrera" title="Permalink to this heading">¶</a></h4>
+</section>
 </section>
 </section>
 <section id="los-objetivos-de-este-proyecto-fueron">
@@ -59,6 +62,31 @@
 <li><p>Crear una aplicación web para poder predecir un piloto dependiendo de una serie de resultados, este puede ser un resultado pasado o  para un resultado a futuro</p></li>
 <li><p>Crear una aplicación web para poder predecir los puntos obtenidos por un piloto dependiendo de unos ajustes, este puede ser un resultado pasado o para un resultado a futuro</p></li>
 </ul>
+</section>
+<section id="documentacion-del-archivo">
+<h2>Documentación del archivo<a class="headerlink" href="#documentacion-del-archivo" title="Permalink to this heading">¶</a></h2>
+<section id="features">
+<h3>Features<a class="headerlink" href="#features" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>RacerId: Identificador de carrera, dentro de él sitio web se encuentra un índice con el nombre de la carrera y el código que se debe utilizar</p></li>
+<li><p>DriverId: Identifador de piloto, dentro de el sitio web se encuentra un índice con el nombre del piiloto y el código que se debe utilizar, este es exclusivo para la búsqueda de puntos</p></li>
+<li><p>ConstructorId: Identificador de constructor, dentro de él sitio web se encuentra un índice con el nombre de los constructores y el código que se debe utilizar</p></li>
+<li><p>Grid: Valor en el que se almacena la posición de salida para el gran premio, se recomienda que el número ingresado esté dentro del rango de 1-20 porque para la mayoria de tuplas dentro de la base de datos están para las temporadas a partir del 2019 y este es el número de pilotos que participaron en esta temporada, adicionalmente, este es el número de pilotos que hay en la actual temporada, lo que para hacer predicciones se ajusta mejor para los resultados</p></li>
+<li><p>Finish: Valor en el que se almacena la posición en la que finaliza la carrera, se recomienda que el número ingresado esté dentro del rango de 1-20, esto por las mismas razones del feature de Grid</p></li>
+<li><p>Points: Valor en el que se almacenan los puntos obtenidos por el piloto en la carrera, estos se recomienda ingresar en el rango de 1-25, que son los puntos que se otorgan en la mayoría de carreras dento de la base de datos. Este es exclusivo del modelo para hallar/predecir el piloto</p></li>
+<li><p>laps: Valor en el que se almacenan las vueltas del gran premio, en caso de que tener dudas se puede ver en el índice de grandes premios</p></li>
+<li><p>time_taken_in_millisec: Valor en el que se almacena el tiempo en el que se demora en hacer su vuelta rápida, se usan milisegundos por las mínimas diferencias que se presentan en el momento de hacer la vuelta más rápida de carrera</p></li>
+<li><p>fastestLap: Vuelta en la que realiza la vuelta más rápida de carrera</p></li>
+<li><p>max_speed: Velocidad máxima alcanzada en carrera</p></li>
+<li><p>statusId: Status en que finalizó el gran premio, debido a la limpieza de datos el valor recomendado es 0, que según el índice es el de que finalizó la carrera</p></li>
+<li><p>year: Año en el que se realiza la carrera</p></li>
+<li><p>Age: Edad del piloto, se puede encontrar en el índice</p></li>
+<li><p>Nationality: Nacionalidad del piloto, se puede encontrar en el índice de nacionalidades</p></li>
+</ul>
+<section id="nota-en-caso-de-desconocer-el-valor-para-la-prediccion-se-recomienda-dejar-la-casilla-en-0-para-la-busqueda-o-prediccion">
+<h4>Nota: En caso de desconocer el valor para la predicción se recomienda dejar la casilla en 0 para la búsqueda o predicción<a class="headerlink" href="#nota-en-caso-de-desconocer-el-valor-para-la-prediccion-se-recomienda-dejar-la-casilla-en-0-para-la-busqueda-o-prediccion" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
 </section>
 </section>
 
